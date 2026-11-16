@@ -244,3 +244,40 @@ html, body {
   -webkit-backdrop-filter: blur(20px) !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
+/* ==========================================
+   NOVA Social - UI Refinement & Neon Glow Fixes
+   ========================================== */
+
+/* ធ្វើឱ្យកាតមាតិកា និង Header មានស៊ុមពន្លឺ Neon ស្រទន់ដូចរូបគោលដៅ */
+.nova-header, .nova-bottom-nav {
+    background-color: rgba(22, 24, 33, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.nova-bottom-nav {
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* បន្ថែមពន្លឺ Neon ឱ្យប៊ូតុងសកម្ម ឬប៊ូតុងបង្កើត (Create Button) */
+.nav-item.create-btn, .header-actions button {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    border: none;
+    color: #ffffff;
+}
+
+/* ការពារកុំឱ្យមានការរញ៉េរញ៉ៃលើទូរសព្ទដៃ (Responsive Layout Fix) */
+body {
+    background-color: #0b0c10;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#nova-app {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #0f1117;
+}
