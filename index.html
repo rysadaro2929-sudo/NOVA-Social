@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+រត<!DOCTYPE html>
 <html lang="km"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="NOVA Social - a next-generation AI-powered social platform with a built-in video studio.">
@@ -15,6 +15,36 @@
 <script src="assets/js/supabase-config.js"></script>
 </head><body>
 <div id="app">
+ <!-- NOVA Social Feed Section (Added) -->
+<div class="nova-post-card" style="margin: 15px; background: #161821; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.2); overflow: hidden;">
+    <!-- ព័ត៌មានអ្នកបង្កើត និងសញ្ញាគ្រៀនពណ៌ខៀវ -->
+    <div class="post-header" style="display: flex; align-items: center; padding: 12px 15px;">
+        <img src="assets/img/profile.jpg" alt="Avatar" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+        <div>
+            <span style="color: #ffffff; font-weight: bold; font-size: 14px;">Koeurn Ry</span>
+            <span style="color: #3b82f6; font-size: 12px; margin-left: 4px;" title="Verified Creator">✔</span>
+            <div style="color: #94a3b8; font-size: 11px;">2h ago • 🌐</div>
+        </div>
+    </div>
+
+    <!-- ចំណងជើងវីដេអូ -->
+    <div class="video-title" style="color: #ffffff; padding: 0 15px 12px 15px; font-size: 14px; font-weight: 500;">
+        សិល្បៈចាក់សាក់ប្រពៃណីខ្មែរ - Khmer Ink Art 🎨 #NOVA #KhmerInk
+    </div>
+
+    <!-- ប្រអប់វីដេអូ -->
+    <div class="video-wrapper" style="width: 100%; background: #000;">
+        <video src="" controls style="width: 100%; max-height: 400px; object-fit: cover;"></video>
+    </div>
+
+    <!-- ចំនួនអន្តរកម្ម (Likes, Comments, Views) -->
+    <div class="post-stats" style="display: flex; justify-content: space-between; padding: 12px 15px; color: #94a3b8; font-size: 13px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <span>❤️ 8.5k Likes</span>
+        <span>💬 452 Comments</span>
+        <span>👀 1.2k Views</span>
+    </div>
+</div>
+ 
  <header><button class="pill" id="imp">+ Import</button><b id="brandMode" role="button" tabindex="0" aria-label="ជ្រើសរើសគុណភាព Export">AI UHD</b><button class="pill gold" id="exp">Export</button></header>
  <main id="stage"><canvas id="cv" width="720" height="1280"></canvas><div id="empty"><button id="imp2" aria-label="add"></button><span>ចុច + ដើម្បីបន្ថែមវីដេអូ</span></div></main>
  <div id="ctl"><span id="cur">0:00 / 0:00</span><button id="play" aria-label="play"></button><span id="clipn">0 clip</span></div>
