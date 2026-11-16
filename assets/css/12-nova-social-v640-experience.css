@@ -167,3 +167,35 @@
     transition-duration:.01ms!important;
   }
 }
+/* ការពារមិនឱ្យអេក្រង់ទូរសព្ទរំកិលចេញក្រៅ (Overflow Fix) */
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* កែសម្រួលទំហំប្រអប់ស្វាគមន៍ (Welcome Card) ឱ្យមានខ្យល់ដកដង្ហើមធំទូលាយ មិនហាប់ណែន */
+.glass-hero-card, div[class*="welcome"], main > div {
+  margin: 12px 16px;
+  padding: 24px 20px;
+  border-radius: 20px;
+}
+
+/* កែសម្រួលចន្លោះប៊ូតុង "Create your first video" និង "Open the editor" ឱ្យមានគន្លាតស្អាត */
+button, .btn-nova-primary, .btn-nova-secondary {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* ធ្វើឱ្យផ្ទាំង Tab ខាងលើមានភាពរលូន និងមិនកកស្ទះអក្សរ */
+.feed-tabs, nav[class*="tab"] {
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+/* រក្សារបារខាងក្រោម (Bottom Navigation) ឱ្យស្ថិតនៅនឹងថ្កល់ និងមានកម្ពស់សមល្មមជាមួយអេក្រង់ទូរសព្ទ */
+.bottom-nav {
+  height: 65px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
