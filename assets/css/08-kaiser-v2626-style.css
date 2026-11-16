@@ -1,0 +1,25 @@
+.role-card{border:1px solid;border-radius:12px;padding:10px 12px;font-size:12px;line-height:1.55}
+.role-card b{display:block;font-size:14px;margin-bottom:3px}
+.role-card.engine{border-color:#59417e;background:linear-gradient(135deg,#251b38,#171722);color:#c9c4d4}
+.role-card.engine b{color:#eadfff}
+.role-card.smart{border-color:#2f6a63;background:linear-gradient(135deg,#173d38,#1a2233);color:#c4d4d0}
+.role-card.smart b{color:#75f0ca}
+.role-card.auto{border-color:#a8832a;background:linear-gradient(135deg,#3a2f0d,#1b1a24);color:#d8d2c0;margin-bottom:10px}.role-card.auto b{color:#ffd166}
+.role-steps{display:flex;gap:6px;font-size:10.5px;color:#9a9aae;align-items:center;flex-wrap:wrap;margin-top:7px}
+.role-steps span{padding:3px 8px;border-radius:99px;background:#2a2a3c}
+.role-steps span.on{background:#f5b301;color:#111;font-weight:700}
+.role-steps i{font-style:normal;opacity:.5}
+.ai-mini{padding:7px 10px;border-radius:9px;background:#30234f;border:1px solid #6842a8;color:#fff;font-size:12px;white-space:nowrap}
+.ai-mini.danger{background:#4a2330;border-color:#a8425a}
+.ai-mini.gold{background:#4a3a0f;border-color:#a8832a}
+.ai-mini:disabled{opacity:.45}
+.ai-result.done{opacity:.45}
+.ai-result.done b{text-decoration:line-through}
+.ai-result .ai-act{display:flex;gap:6px}
+.ai-datastat{font-size:11px;color:#9a9aae;display:flex;gap:6px;align-items:center}
+.ai-datastat b{color:#75f0ca}
+.ai-datastat.warn b{color:#f3c34c}
+.ai-sum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.ai-sum div{padding:8px 4px;border:1px solid #373545;border-radius:10px;background:#1d1c27;text-align:center}
+.ai-sum b{display:block;font-size:17px;color:#f3c34c}
+.ai-sum small{font-size:10px;color:#a9a6b5}

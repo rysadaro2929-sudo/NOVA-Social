@@ -1,0 +1,12 @@
+#kme .kh .btn{white-space:nowrap;flex:0 0 auto;padding:9px 16px;font-size:13px;line-height:1.2}
+#kme .kh b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 8px;margin:6px 0 12px}
+.vtile{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:10.5px;color:#bbb;text-align:center}
+.vtile div{width:54px;height:54px;border-radius:14px;background:#2a2a3c;display:grid;place-items:center;font-size:26px;border:2px solid transparent}
+.vtile.sel div{border-color:var(--gold);background:#3a2f0d}
+.vtile.sel{color:var(--gold)}
+.vrec{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0 8px}
+.vrec .media-action{flex:1 1 40%;text-align:center}
+.vrec .media-action.rec{background:#e11d48;border:0;color:#fff;font-weight:700}
+.vlevel{height:6px;border-radius:3px;background:#2a2a3c;overflow:hidden;margin:2px 0 8px}
+.vlevel i{display:block;height:100%;width:0;background:linear-gradient(90deg,#22c55e,#f5b301,#ef4444);transition:width .08s}

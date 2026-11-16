@@ -1,0 +1,42 @@
+#tools button.kaiser-studio-launch{
+ flex:0 0 auto;min-width:57px;padding:5px 4px;gap:3px;font-size:10px;
+ display:flex;flex-direction:column;align-items:center;justify-content:center;
+ color:#d5d5e1;background:transparent!important;border:0!important;
+ border-radius:9px;box-shadow:none!important
+}
+#tools .kaiser-studio-launch .studio-icon{font-size:21px;line-height:22px;color:inherit}
+#tools .kaiser-studio-launch .studio-label{font-size:9px;line-height:1.15;color:inherit;text-align:center;white-space:normal;font-weight:400}
+.kaiser-studio{display:flex;flex-direction:column;gap:9px;padding:2px 0 12px}
+.kaiser-studio .studio-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.kaiser-studio .studio-field{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}
+.kaiser-studio label{font-size:12px;color:#aaa}
+.kaiser-studio input,.kaiser-studio select,.kaiser-studio textarea{width:100%;min-width:0;background:#29293b;color:#fff;border:1px solid #49495b;border-radius:10px;padding:10px;font:inherit;user-select:text}
+.kaiser-studio textarea{min-height:82px;resize:vertical;line-height:1.5}
+.kaiser-studio .studio-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kaiser-studio .studio-option{min-height:62px;background:#222231;border:1px solid #39394b;border-radius:10px;padding:8px;color:#c9c9d6;text-align:center;font-size:12px}
+.kaiser-studio .studio-option.active{border-color:#777;color:#fff;background:#2b2b3b}
+.kaiser-studio .studio-action{background:#30234f;border:1px solid #6842a8;border-radius:10px;padding:11px 12px;color:#fff;font-weight:700;flex:1;min-width:130px}
+.kaiser-studio .studio-action.gold{background:#f5b301;border:0;color:#17120a}
+.kaiser-studio .studio-action:disabled{opacity:.5}
+.kaiser-studio .studio-note{font-size:11px;line-height:1.5;color:#9a9aae;margin:0;overflow-wrap:anywhere}
+.kaiser-studio .studio-preview{width:100%;max-height:240px;object-fit:contain;background:#09090d;border-radius:9px;display:block}
+.kaiser-studio .studio-preview-wrap{display:flex;flex-direction:column;gap:7px}
+.kaiser-studio .studio-action[hidden]{display:none!important}
+.kaiser-studio .studio-preview-wrap .studio-action{width:100%;box-sizing:border-box;text-align:center}
+
+/* V6.3.30 · AI image aspect-ratio selector; inherits the original Studio palette. */
+.kaiser-studio .studio-size-note{font-size:11px;line-height:1.45;color:#9a9aae;margin:0}
+.kaiser-studio .studio-size-select{font-weight:600}
+/* V6.3.35 · Instant credits (same palette as the original Studio) */
+.kaiser-studio .studio-credit{border:1px solid #4a3a0f;background:linear-gradient(135deg,#2b2410,#1d1c27);border-radius:12px;padding:10px 12px}
+.kaiser-studio .sc-top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.kaiser-studio .sc-title{color:#ffd166;font-size:13px}
+.kaiser-studio .sc-reset{color:#9a9aae;font-size:11px;white-space:nowrap}
+.kaiser-studio .sc-bar{height:7px;border-radius:4px;background:#2a2a3c;margin:7px 0;overflow:hidden}
+.kaiser-studio .sc-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#f5b301,#22c55e);transition:width .4s}
+.kaiser-studio .sc-note{font-size:11px;color:#9a9aae;line-height:1.5}
+.kaiser-studio .studio-chips{display:flex;flex-wrap:wrap;gap:6px}
+.kaiser-studio .studio-chip{padding:6px 10px;border-radius:14px;background:#2a2a3c;border:1px solid #3d3d52;color:#d6d6e2;font-size:11.5px}
+.kaiser-studio .studio-adv-toggle{background:#222231;border:1px dashed #5b5b72;border-radius:10px;padding:10px;color:#c9c9d6;font-size:12px;text-align:left;line-height:1.5}
+.kaiser-studio .studio-adv{display:flex;flex-direction:column;gap:8px}
+.kaiser-studio .studio-adv[hidden]{display:none!important}
