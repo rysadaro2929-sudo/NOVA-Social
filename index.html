@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="km"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="NOVA Social - a next-generation AI-powered social platform with a built-in video studio.">
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/png" href="assets/images/nova-logo.png">
+<title>NOVA Social · KAISER AI STUDIO V6.3.42</title>
+<!-- V6.3.34 is based directly on V6.3.33. Original editor layout, timeline interactions, and feature modules are preserved. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Inter:wght@400;600;700&family=Kantumruy+Pro:wght@400;600;700&family=Noto+Sans+Khmer:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/01-base.css">
+<meta name="kaiser-version" content="V6.3.32 Video Preview Enhancement">
+<!-- Supabase browser SDK + NOVA public client configuration -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/js/supabase-config.js"></script>
+</head><body>
+<div id="app">
+ <header><button class="pill" id="imp">+ Import</button><b id="brandMode" role="button" tabindex="0" aria-label="ជ្រើសរើសគុណភាព Export">AI UHD</b><button class="pill gold" id="exp">Export</button></header>
+ <main id="stage"><canvas id="cv" width="720" height="1280"></canvas><div id="empty"><button id="imp2" aria-label="add"></button><span>ចុច + ដើម្បីបន្ថែមវីដេអូ</span></div></main>
+ <div id="ctl"><span id="cur">0:00 / 0:00</span><button id="play" aria-label="play"></button><span id="clipn">0 clip</span></div>
+ <section id="timeline"><div id="tw"><div id="tk"><div id="tt"></div><button id="add" aria-label="add clip"></button></div></div><div id="head"></div></section>
+ <nav id="tools"></nav>
+ <div id="kp"></div>
+ <div id="sheet"><div class="grab"></div><div id="sh"><h4 id="st"></h4><button id="ok"></button></div><div id="sc"></div></div>
+ <div id="toast"></div>
+</div>
+<input type="file" id="file" accept="video/*" multiple hidden>
+<input type="file" id="overlayFile" accept="video/*,image/*" multiple hidden>
+<input type="file" id="audioLibraryFile" accept="audio/*" multiple hidden>
 
+<script src="assets/js/01-smart-clip.js"></script>
+<script src="assets/js/02-editor-core.js"></script>
+
+<script src="assets/js/03-ai-timeline-bridge.js"></script>
+
+<script src="assets/js/04-hybrid-ai-cut.js"></script>
+
+
+
+<!-- KAISER V6.3.30 · IMAGE SIZE CONTROL: YouTube 16:9 (1920×1080) and TikTok/Shorts 9:16 (1080×1920). Original interface and existing features preserved. -->
+<!-- KAISER V6.3.12: Overlay without pop-up sheet; finger stretch/zoom/rotate, Animation, Crop and more overlay tools; UI design unchanged. KAISER AI STUDIO V6.3.10: additive feature; V6.3.6 editor UI and tools are preserved. -->
+<link rel="stylesheet" href="assets/css/02-kaiser-ai-studio-style.css">
+<script src="assets/js/05-kaiser-ai-studio-module.js" id="kaiser-ai-studio-module"></script>
+
+<link rel="stylesheet" href="assets/css/03-kaiser-me-style.css">
+<link rel="stylesheet" href="assets/css/04-kaiser-v2633-style.css">
+<link rel="stylesheet" href="assets/css/05-kaiser-nova-v642.css">
+<div id="kme"></div>
+<script src="assets/js/06-kaiser-me-module.js" id="kaiser-me-module"></script>
+
+<link rel="stylesheet" href="assets/css/06-kaiser-v20-style.css">
+<script src="assets/js/07-kaiser-v20-module.js" id="kaiser-v20-module"></script>
+
+
+
+<!-- KAISER V6.3.23 · AI ENGINE UPGRADE
+     Additive deep visual-quality analysis. Existing editor, timeline, keyframes,
+     export pipeline, voice studio, and original AI tools remain untouched. -->
+<link rel="stylesheet" href="assets/css/07-kaiser-ai-engine-v6323-style.css">
+<script src="assets/js/08-kaiser-ai-engine-v6323.js" id="kaiser-ai-engine-v6323"></script>
+
+<!-- KAISER V6.3.26 · AI QUALITY — clear roles: AI Engine = Inspector (measures + fixes quality),
+     AI Smart = Editor (decides + applies cuts/hook using Engine data). Additive only; original design unchanged. -->
+<link rel="stylesheet" href="assets/css/08-kaiser-v2626-style.css">
+<script src="assets/js/09-kaiser-v2626-module.js" id="kaiser-v2626-module"></script>
+
+<!-- KAISER V6.3.27 · ACCOUNT & CLOUD: additive account/server/cloud improvements; original editor UI retained. -->
+
+<!-- KAISER V6.3.37 · SOCIAL-FIRST VIDEO PRESENTATION (additive; editor untouched) -->
+<link rel="stylesheet" href="assets/css/09-kaiser-social-v637-style.css">
+
+<link rel="stylesheet" href="assets/css/10-kaiser-v638-social-polish.css">
+
+<link rel="stylesheet" href="assets/css/11-nova-v639-brand-system.css">
+</body></html>

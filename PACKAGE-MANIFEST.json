@@ -1,0 +1,43 @@
+{
+  "source_file": "5_6320999533840966698.html",
+  "entry_point": "index.html",
+  "stylesheets_in_original_order": [
+    "01-base.css",
+    "02-kaiser-ai-studio-style.css",
+    "03-kaiser-me-style.css",
+    "04-kaiser-v2633-style.css",
+    "05-kaiser-nova-v642.css",
+    "06-kaiser-v20-style.css",
+    "07-kaiser-ai-engine-v6323-style.css",
+    "08-kaiser-v2626-style.css",
+    "09-kaiser-social-v637-style.css",
+    "10-kaiser-v638-social-polish.css",
+    "11-nova-v639-brand-system.css"
+  ],
+  "scripts_in_original_order": [
+    "01-smart-clip.js",
+    "02-editor-core.js",
+    "03-ai-timeline-bridge.js",
+    "04-hybrid-ai-cut.js",
+    "05-kaiser-ai-studio-module.js",
+    "06-kaiser-me-module.js",
+    "07-kaiser-v20-module.js",
+    "08-kaiser-ai-engine-v6323.js",
+    "09-kaiser-v2626-module.js"
+  ],
+  "images_extracted": [
+    "nova-logo.png"
+  ],
+  "supabase_client_config": "assets/js/supabase-config.js",
+  "supabase_client_global": "window.novaSupabase",
+  "note": "Supabase client initialized; source did not contain database/auth/storage integration.",
+  "repository": "NOVA-Social",
+  "publish": "GitHub Pages: branch main, folder / (root)",
+  "folders": {
+    "assets/css": "stylesheets (numbered = load order)",
+    "assets/js": "scripts (numbered = load order, supabase-config.js loads first)",
+    "assets/images": "logo and images",
+    "assets/icons": "icons (empty for now)",
+    "assets/fonts": "local fonts (empty for now)"
+  }
+}
