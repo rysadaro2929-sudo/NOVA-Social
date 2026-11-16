@@ -1,1 +1,169 @@
-
+/* NOVA SOCIAL V6.4 — social-only experience layer.
+   All selectors are scoped to #kme.social-front. KAISOR/KAISER Editor styles are not changed. */
+#kme.social-front{
+  --nova-accent:#927cff;
+  --nova-blue:#35b8e8;
+  --nova-surface:rgba(255,255,255,.055);
+  --nova-stroke:rgba(190,180,255,.14);
+  --nova-muted:#aab3ce;
+  background:
+    radial-gradient(100% 34% at 50% 0%,rgba(128,101,245,.20),transparent 76%),
+    radial-gradient(65% 35% at 100% 14%,rgba(53,184,232,.09),transparent 78%),
+    #101323;
+  color:#f6f7ff;
+  overscroll-behavior-y:contain;
+}
+#kme.social-front button{touch-action:manipulation}
+#kme.social-front button:focus-visible,
+#kme.social-front a:focus-visible,
+#kme.social-front input:focus-visible,
+#kme.social-front textarea:focus-visible{
+  outline:2px solid #b9aaff;outline-offset:3px;
+}
+#kme.social-front .kx-top{
+  position:relative;z-index:5;
+  min-height:68px;
+  padding-inline:clamp(14px,3vw,24px);
+  border-bottom:1px solid rgba(255,255,255,.065);
+}
+#kme.social-front .kx-top .sf-icon{
+  width:42px;height:42px;flex:0 0 42px;
+  border-radius:15px;font-size:21px;
+  transition:transform .18s ease,background .18s ease;
+}
+#kme.social-front .kx-top .sf-icon:active{transform:scale(.94)}
+#kme.social-front .sf-tabs{
+  gap:clamp(18px,5vw,30px);
+  padding-inline:clamp(16px,4vw,26px);
+}
+#kme.social-front .sf-tabs button{font-size:14px;min-height:38px}
+#kme.social-front .nv-pillars{
+  position:relative;z-index:2;
+  padding:9px clamp(12px,3vw,22px) 7px;
+  gap:9px;
+  border-bottom:1px solid rgba(255,255,255,.035);
+}
+#kme.social-front .nv-pill{
+  height:40px;padding-inline:15px;
+  border-color:rgba(190,180,255,.16);
+  background:rgba(255,255,255,.045);
+  font-size:12.5px;
+}
+#kme.social-front .nv-pill.on{
+  background:linear-gradient(110deg,#8065f5,#5d7be9 62%,#35b8e8);
+  box-shadow:0 7px 22px rgba(91,112,235,.25);
+}
+#kme.social-front .sf-scroll{
+  padding:8px clamp(12px,3vw,22px) calc(104px + env(safe-area-inset-bottom,0px));
+  scroll-padding-top:12px;
+}
+#kme.social-front .kx-hero{
+  width:100%;max-width:620px;
+  margin:7px auto 16px;
+  border-radius:24px;
+  overflow:hidden;
+}
+#kme.social-front .kx-stories{
+  padding:10px 2px 16px;
+  gap:14px;
+}
+#kme.social-front .kx-story{min-width:64px}
+#kme.social-front .kx-ring{box-shadow:0 0 0 1px rgba(255,255,255,.10)}
+#kme.social-front .kx-discover-banner{
+  margin:12px 0 20px;
+  border:1px solid rgba(190,180,255,.14);
+}
+#kme.social-front .sf-section{
+  margin:20px 3px 12px;
+  font-size:14px;letter-spacing:.1px;
+}
+#kme.social-front .kx-card{
+  border-radius:19px;
+  background:linear-gradient(160deg,rgba(255,255,255,.075),rgba(255,255,255,.025));
+  border-color:rgba(190,180,255,.13);
+  box-shadow:0 8px 24px rgba(0,0,0,.13);
+  transition:transform .18s ease,border-color .18s ease;
+}
+#kme.social-front .kx-card:active{transform:scale(.985)}
+#kme.social-front .kx-grid{
+  gap:11px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+#kme.social-front .kx-card-bg{background-color:#1b2034}
+#kme.social-front .kx-card-meta{padding:10px 11px}
+#kme.social-front .kx-card-tx b{line-height:1.4}
+#kme.social-front .kx-empty{
+  border:1px solid rgba(190,180,255,.12);
+  box-shadow:0 12px 34px rgba(0,0,0,.15);
+}
+#kme.social-front .nv-head{
+  border-radius:23px;
+  padding:16px;
+  border-color:rgba(190,180,255,.16);
+}
+#kme.social-front .nv-ai-card,
+#kme.social-front .nv-comm,
+#kme.social-front .nv-profile,
+#kme.social-front .nv-rank-row{
+  border-color:rgba(190,180,255,.14);
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.035));
+}
+#kme.social-front .nv-ai-card{min-height:142px}
+#kme.social-front .nv-ai-card:active,
+#kme.social-front .nv-tool:active,
+#kme.social-front .nv-rank-row:active{transform:scale(.985)}
+#kme.social-front .nv-create input,
+#kme.social-front .nv-capbox input{
+  min-height:46px;border-color:rgba(190,180,255,.2);
+  background:rgba(8,11,24,.56);
+}
+#kme.social-front .nv-btn,
+#kme.social-front .nv-mini,
+#kme.social-front .kx-watch,
+#kme.social-front .kx-ghost{
+  min-height:40px;transition:filter .18s ease,transform .18s ease;
+}
+#kme.social-front .nv-btn:active,
+#kme.social-front .nv-mini:active,
+#kme.social-front .kx-watch:active,
+#kme.social-front .kx-ghost:active{transform:scale(.97)}
+#kme.social-front .sf-nav{
+  min-height:72px;
+  padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));
+  background:linear-gradient(180deg,rgba(16,19,35,0),rgba(16,19,35,.97) 26%);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+#kme.social-front .sf-nav button{
+  min-height:48px;justify-content:flex-end;gap:4px;
+  font-size:10px;letter-spacing:.1px;
+}
+#kme.social-front .sf-nav .sf-nav-icon{font-size:22px}
+#kme.social-front .sf-nav button.create .sf-nav-icon{
+  width:48px;height:48px;margin-top:-17px;
+}
+#kme.social-front .kx-live{font-weight:800;letter-spacing:.2px}
+#kme.social-front .kx-badge{box-shadow:0 0 0 2px #171a2d}
+@media(min-width:700px){
+  #kme.social-front .sf-scroll{max-width:1020px;margin-inline:auto}
+  #kme.social-front .kx-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #kme.social-front .kx-hero{max-width:760px}
+  #kme.social-front .kx-discover-banner{max-width:980px}
+  #kme.social-front .nv-ai-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:360px){
+  #kme.social-front .kx-top{padding-inline:10px;gap:8px}
+  #kme.social-front .nova-logo-image{width:64px}
+  #kme.social-front .nv-pill{padding-inline:12px;font-size:11.5px}
+  #kme.social-front .sf-nav{padding-inline:3px}
+}
+@media(prefers-reduced-motion:reduce){
+  #kme.social-front *,
+  #kme.social-front *::before,
+  #kme.social-front *::after{
+    scroll-behavior:auto!important;
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}
